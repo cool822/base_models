@@ -84,7 +84,7 @@ class PLE(BaseModel):
                                                   self.input_dim, expert_dnn_hidden_units[-1], expert_dnn_hidden_units)
 
         # shared experts
-        self.shared_experts = multi_module_list(self.num_levels, 1, self.specific_expert_num,
+        self.shared_experts = multi_module_list(self.num_levels, 1, self.shared_expert_num,
                                                 self.input_dim, expert_dnn_hidden_units[-1], expert_dnn_hidden_units)
 
         # 2. gates
